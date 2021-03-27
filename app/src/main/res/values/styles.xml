@@ -5,4 +5,15 @@
         <item name="android:windowTranslucentStatus">true</item>
         <item name="android:windowTranslucentNavigation">true</item>
     </style>
+
+    <!-- Style for TextView -->
+    <style name="TextView"></style>
+
+    <style name="TextView.PoppinsMedium_32_020202">
+        <item name="fontFamily">@font/poppins_medium</item>
+        <item name="android:textColor">@color/color_020202</item>
+        <item name="android:textSize">32sp</item>
+    </style>
+
+
 </resources>
