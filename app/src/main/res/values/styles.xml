@@ -29,8 +29,20 @@
 
     <style name="TextView.PoppinsNormal_14_020202">
         <item name="fontFamily">@font/poppins</item>
+        <item name="android:textColor">@color/color_020202</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextView.PoppinsNormal_14_8D92A3">
+        <item name="fontFamily">@font/poppins</item>
         <item name="android:textColor">@color/color_8D92A3</item>
         <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextView.PoppinsMedium_20_020202">
+        <item name="fontFamily">@font/poppins_medium</item>
+        <item name="android:textColor">@color/color_020202</item>
+        <item name="android:textSize">20sp</item>
     </style>
 
     <!-- Style for EditText -->

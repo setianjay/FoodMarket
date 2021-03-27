@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_FAFAFC"
+    android:fillViewport="true">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:id="@+id/logoSignupSuccess"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_signup_success"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.328"
+        android:contentDescription="@string/logo_apps"/>
+
+    <TextView
+        android:id="@+id/titleSignupSuccess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextView.PoppinsMedium_20_020202"
+        android:text="@string/yeay_completed"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoSignupSuccess"
+        />
+
+    <TextView
+        android:id="@+id/messageSignupSuccess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextView.PoppinsNormal_14_8D92A3"
+        android:textAlignment="center"
+        android:text="@string/now_you_are_able_to_order_some_foods_as_a_self_reward"
+        android:layout_marginTop="6dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleSignupSuccess"/>
+
+    <Button
+        android:id="@+id/btnFindFoods"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Button.Primary"
+        android:text="@string/find_foods"
+        android:background="@drawable/shape_rectangle_8_ffc700"
+        android:paddingStart="62dp"
+        android:paddingEnd="62dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/messageSignupSuccess"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
