@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.os.Handler
 import com.setianjay.foodmarket.MainActivity
 import com.setianjay.foodmarket.R
+import com.setianjay.foodmarket.ui.auth.AuthActivity
 
 class SplashScreenActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,7 +18,7 @@ class SplashScreenActivity : AppCompatActivity() {
 
     private fun move(){
         Handler().postDelayed({
-            startActivity(Intent(applicationContext,MainActivity::class.java))
+            startActivity(Intent(applicationContext,AuthActivity::class.java))
         }, 3000)
     }
 }
