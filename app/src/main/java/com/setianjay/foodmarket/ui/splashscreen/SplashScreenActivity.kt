@@ -19,6 +19,7 @@ class SplashScreenActivity : AppCompatActivity() {
     private fun move(){
         Handler().postDelayed({
             startActivity(Intent(applicationContext,AuthActivity::class.java))
+            finish()
         }, 3000)
     }
 }
