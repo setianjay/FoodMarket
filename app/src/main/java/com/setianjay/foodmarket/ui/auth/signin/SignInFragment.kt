@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.setianjay.foodmarket.R
 import com.setianjay.foodmarket.databinding.FragmentSignInBinding
+import com.setianjay.foodmarket.ui.MainActivity
 import com.setianjay.foodmarket.ui.auth.AuthActivity
 
 class SignInFragment : Fragment(), View.OnClickListener {
@@ -35,6 +36,9 @@ class SignInFragment : Fragment(), View.OnClickListener {
     override fun onClick(v: View?) {
         when (v?.id) {
             R.id.btnSignin -> {
+                val intent = Intent(activity, MainActivity::class.java)
+                startActivity(intent)
+                activity?.finish()
             }
             R.id.btnSignup -> {
                 val intent = Intent(requireContext(),AuthActivity::class.java)

@@ -4,7 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
-import com.setianjay.foodmarket.MainActivity
 import com.setianjay.foodmarket.R
 import com.setianjay.foodmarket.ui.auth.AuthActivity
 
