@@ -49,6 +49,12 @@
         <item name="android:textSize">20sp</item>
     </style>
 
+    <style name="TextView.PoppinsMedium_12_8D92A3">
+        <item name="fontFamily">@font/poppins</item>
+        <item name="android:textColor">@color/color_8D92A3</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
     <!-- Style for EditText -->
     <style name="EditText"></style>
 

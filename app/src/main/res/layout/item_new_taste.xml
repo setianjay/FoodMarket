@@ -6,8 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:paddingStart="24dp"
     android:paddingTop="16dp"
-    android:paddingEnd="24dp"
-    android:paddingBottom="16dp">
+    android:paddingEnd="24dp">
 
     <ImageView
         android:id="@+id/ivFood"
@@ -45,8 +44,19 @@
         android:layout_height="wrap_content"
         android:theme="@style/ratingBar"
         style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/rate"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextView.PoppinsMedium_12_8D92A3"
+        tools:text="7.4"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
