@@ -26,7 +26,7 @@ class HomeAdapter(private val listView: List<HomeModel>, private val listener: O
     }
 
     inner class ViewHolder(val binding: ItemHomeHorizontalBinding): RecyclerView.ViewHolder(binding.root){
-        fun bind(data:HomeModel,listener:OnAdapterListener){
+        fun bind(data:HomeModel, listener:OnAdapterListener){
             Log.d(TAG,binding.tvTitleFood.text.toString())
             Log.d(TAG,"${binding.rbFood.rating}")
             binding.tvTitleFood.text = data.titleFood
@@ -36,7 +36,7 @@ class HomeAdapter(private val listView: List<HomeModel>, private val listener: O
                 .load(data.posterFood)
                 .into(binding.ivFood)
 
-            binding.ivFood.setOnClickListener { listener.onClick(it,data) }
+            binding.root.setOnClickListener { listener.onClick(it,data) }
         }
     }
 }
