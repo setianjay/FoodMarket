@@ -36,7 +36,7 @@ class HomeAdapter(private val listView: List<HomeModel>, private val listener: O
                 .load(data.posterFood)
                 .into(binding.ivFood)
 
-            binding.parentItem.setOnClickListener { listener.onClick(it,data) }
+            binding.ivFood.setOnClickListener { listener.onClick(it,data) }
         }
     }
 }
